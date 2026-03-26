@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopal kumar poddar-Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <style>
+       #welcome-overlay {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: #000;
+           color: #ff6f61; /* Aapke portfolio ka theme color */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           z-index: 10000;
+           transition: opacity 1s ease-out;
+           text-align: center;
+       }
+       #welcome-overlay h1 {
+           font-size: 3rem;
+           font-weight: bold;
+           border-right: 3px solid;
+           white-space: nowrap;
+           overflow: hidden;
+           animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
+       }
+       @keyframes typing { from { width: 0 } to { width: 100% } }
+       @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #ff6f61; } }
+
+       .rose-petal {
+           position: fixed;
+           top: -10%;
+           z-index: 9999;
+           user-select: none;
+           pointer-events: none;
+           font-size: 24px;
+           animation: fall linear forwards;
+       }
+       @keyframes fall {
+           to {
+               transform: translateY(110vh) translateX(50px) rotate(360deg);
+           }
+       }
+   </style>
+</head>
+
+<body>
+    <div id="welcome-overlay">
+        <h1>Welcome to Gopal's Portfolio</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">GOPAL KUMAR PODDAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <section id="home" class="home-background d-flex align-items-center justify-content-center text-center">
+        <div class="home-content animate__animated animate__fadeIn">
+            <h1>Hi, I'm <span class="name">GOPAL KUMAR PODDAR</span></h1>
+            <h2>Full Stack Developer</h2>
+            <p>Crafting beautiful and functional web experiences.</p>
+            <a href="#projects" class="btn btn-primary animate__animated animate__fadeIn animate__delay-3s">
+                <i class="fas fa-user"></i> View My Work
+            </a>
+
+            <a href="#about" class="btn btn-primary animate__animated animate__fadeIn animate__delay-3s">
+                <i class="fas fa-user"></i> Learn More
+            </a>
+
+            <div class="social-icons mt-3">
+                <a href="https://www.linkedin.com/in/gopal-kumar-poddar-95592a2a1
+               " target="_blank" class="btn btn-outline-black mx-1"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Gopalpoddar005" target="_blank" class="btn btn-outline-black mx-1"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+   
+
+    <section id="about" class="about-background py-5 ">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">About Me</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="gopalresumepic.jpg" class="img-fluid  side-img shadow-lg w-50"  alt="Profile Picture">
+                </div>
+                <div class="col-md-8">
+                    <p class="text-black fst-italic">Hello! I’m Gopal Kumar Poddar, a B.Tech student in Electronics and Communication Engineering with a strong interest in Full Stack Web Development and Core Electronics.
+
+I have hands-on experience in building responsive and interactive web applications using HTML, CSS, JavaScript, Bootstrap, and tools like Firebase. I have developed projects like an e-commerce website and a personal portfolio that demonstrate my skills in UI/UX design, responsive layouts, and real-world web development.
+
+Alongside web development, I have knowledge of C, C++, SQL, and Data Structures & Algorithms (learning), which helps me improve problem-solving and backend logic building. I also have practical experience with Arduino, IoT, PCB design (Proteus), and circuit design, gained through internships and projects.
+
+I am passionate about combining software and hardware skills to build efficient, scalable, and innovative solutions. Feel free to explore my portfolio to see my work!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-background py-5">
+        <div class="container">
+            <h2 class="text-center text-white mb-4">Education</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="stepper-item">
+                        <div class="stepper-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stepper-content">
+                            <h5>Supaul College Of Engineering</h5>
+                            <p>Bachelor's Degree in Information Technology, 2k22 - 2k26</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="stepper-item">
+                        <div class="stepper-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stepper-content">
+                            <h5>Lohia Charan Singh College</h5>
+                            <p>Intermediate with Science(PCMb), 2k18 - 2k20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-background shadow py-5">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-primary text-white">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fab fa-html5"></i> HTML</h5>
+                            <p class="card-text">Proficient in crafting semantic and accessible web content using HTML5.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-primary text-white">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fab fa-css3-alt"></i> CSS</h5>
+                            <p class="card-text">Skilled in designing responsive and visually appealing layouts with CSS3.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-primary text-white">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fab fa-js"></i> JavaScript</h5>
+                            <p class="card-text">Experienced in building interactive web applications using JavaScript ES6+.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-secondary text-white">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fab fa-bootstrap"></i> Tailwind CSS</h5>
+                            <p class="card-text">Skilled in creating responsive designs using Tailwind CSS framework.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-success text-white">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fab fa-node-js"></i> Node.js</h5>
+                            <p class="card-text">Experienced in building server-side applications and RESTful APIs with Node.js.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-dark text-white">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fas fa-database"></i> firebase</h5>
+                            <p class="card-text">Proficient in using firebase for database management in full-stack applications.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-info text-white">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fab fa-python"></i> C++ (DSA)</h5>
+                            <p class="card-text"> knowledge about C++ programming and Data Structures & Algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-dark text-white">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fab fa-git"></i> Git & GitHub</h5>
+                            <p class="card-text"> knowledge about version control and collaboration using Git and GitHub.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-secondary text-white">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fas fa-plug"></i> SQL& MYSQL</h5>
+                            <p class="card-text">Skill for data base mangment system</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-success text-white shadow">
+                        <div class="card-body shadow">
+                            <h5 class="card-title"><i class="fas fa-code"></i> Tools</h5>
+                            <p class="card-text">Proficient with VS Code, npm, Postman</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <section id="resume" class="resume-background py-5">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">Resume</h2>
+            <p class="text-white mb-4">Download or view my resume to learn more about my skills and experience.</p>
+            <a href="gopal_ressume.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Download Resume</a>
+            <a href="gopal_ressume.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-eye"></i> View Resume</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-background py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h2 class="text-white mb-4">Contact Me</h2>
+                   <form id="contact-form">
+                        <div class="form-group mb-3">
+                            <label for="name" class="text-white">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email" class="text-white">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="message" class="text-white">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+
+
+            
+
+        
+                <div class="col-md-6 mb-4">
+                    <h2 class="text-white mb-4">Connect With Me</h2>
+                    <a href="http://linkedin.com/in/gopal-kumar-poddar-95592a2a1" target="_blank" class="btn btn-outline-light me-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/gopalpoddar005" target="_blank" class="btn btn-outline-light me-2"><i class="fab fa-github"></i> GitHub</a>
+        
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer-background py-3">
+        <div class="container text-center">
+            <p class="text-white mb-0">&copy; 2026 gopal kumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <script src="contact.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+     
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const overlay = document.getElementById('welcome-overlay');
+        
+        // Welcome Screen (3 seconds)
+        setTimeout(() => {
+            overlay.style.opacity = '0';
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                startHeavyRoseRain(); // Musladhar rain shuru
+            }, 1000);
+        }, 3000);
+
+        function startHeavyRoseRain() {
+            const emojis = ['🌸', '🌸', '🌸', '✨'];
+            
+            // Interval ko 50ms kiya taaki bahut saare roses ek saath girein (Musladhar)
+            const rainInterval = setInterval(() => {
+                const petal = document.createElement('div');
+                petal.classList.add('rose-petal');
+                petal.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+                
+                // Random size aur position
+                const randomSize = Math.floor(Math.random() * 20) + 20; // 20px to 40px
+                petal.style.fontSize = randomSize + 'px';
+                petal.style.left = Math.random() * 100 + 'vw';
+                
+                // Speed ko thoda fast rakha hai (2s to 4s)
+                petal.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                
+                document.body.appendChild(petal);
+
+                // Memory saaf karne ke liye remove karein
+                setTimeout(() => {
+                    petal.remove();
+                }, 4000);
+            }, 50); // 50ms = Super Fast heavy rain
+
+            // EXACTLY 4 SECONDS BAAD STOP
+            setTimeout(() => {
+                clearInterval(rainInterval);
+            }, 4000); 
+        }
+    });
+</script>
+
+</body>
+
+</html>

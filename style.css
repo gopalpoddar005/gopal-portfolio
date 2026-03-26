@@ -1,0 +1,243 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f8f9fa;
+    background-color: #212529;
+}
+
+
+
+/* Navbar Styles */
+.navbar {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+    color: #adb5bd !important;
+    text-decoration: underline;
+}
+
+/* Home Section */
+.home-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x1080') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+.home-content {
+    color: #ffffff;
+}
+.home-content .name {
+    color: #ff6f61;
+    font-size: 2.5rem;
+    animation: fadeInOut 5s infinite;
+}
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.home-background {
+    background: linear-gradient(to right, #00bcd4, #000000);
+    color: #7be6e4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    /* height: 100vh; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    color: #ffeb3b;
+    font-weight: 600;
+}
+
+.name {
+    font-size: 2.5rem;
+    color: #ffeb3b;
+    font-weight: 700;
+}
+
+#home p {
+    font-size: 1.25rem;
+    color: #e0f7fa;
+}
+
+#home .btn {
+    background-color: #ff5722;
+    border: none;
+    font-weight: bold;
+}
+
+#home .btn:hover {
+    background-color: #e64a19;
+}
+
+
+/* About Section */
+.about-background {
+    /* background: linear-gradient(to right, #2c3e50, #4ca1af); */
+    
+    background: linear-gradient(to right, #0b0b0b, #000000);
+
+    padding: 60px 0;
+}
+.side-img{
+    height: 50px;
+}
+
+/* Education Section */
+.education-background {
+    /* background: linear-gradient(to right, #2c3e50, #fd746c); */
+    
+    background: linear-gradient(to right, #1a1c1c, #000000);
+
+    padding: 60px 0;
+}
+.stepper-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #343a40;
+    padding: 15px;
+    color: #ffffff;
+}
+.stepper-icon {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-right: 15px;
+}
+.stepper-content {
+    flex-grow: 1;
+}
+
+/* Skills Section */
+.skills-background {
+    background: linear-gradient(to right, #565454, #202019);
+    padding: 60px 0;
+}
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Resume Section */
+.resume-background {
+    background: linear-gradient(to right, #4ca1af, #c2c2f0);
+    padding: 60px 0;
+}
+.btn-primary, .btn-secondary {
+    margin: 10px;
+    font-weight: 500;
+}
+.btn-primary {
+    background-color: #ff6f61;
+    border: none;
+}
+.btn-secondary {
+    background-color: #dce35b;
+    border: none;
+}
+
+/* Contact Section */
+.contact-background {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    padding: 60px 0;
+}
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.btn-outline-light:hover {
+    color: #2c3e50;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* Footer Styles */
+.footer-background {
+    background: #000;
+    padding: 20px 0;
+}
+/* Navbar Scroll Effect */
+.navbar.scrolled {
+    background-color: #000 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll-to-Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+/* Button Hover Effects */
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Animated Backgrounds */
+.home-background, .about-background, .education-background, .skills-background, .projects-background, .internships-background, .resume-background, .contact-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Form Styles */
+form .form-control {
+    border-radius: 5px;
+    border-color: #ffffff;
+}
+form .form-control:focus {
+    box-shadow: none;
+    border-color: #ff6f61;
+}
+
+/* Icon Styles */
+.fas, .fab {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+/* Carousel Styles */
+.carousel {
+    margin: 0 auto;
+}
+.carousel-inner img {
+    border-radius: 15px;
+}
+
+/* Stepper Styles */
+.stepper-item {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+.stepper-item:hover {
+    background-color: #34495e;
+}
+.stepper-content h5 {
+    color: #ff6f61;
+}
